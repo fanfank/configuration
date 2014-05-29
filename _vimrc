@@ -11,6 +11,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+set encoding=utf-8 termencoding=utf-8 fileencoding=utf-8
+set fencs=utf-8,gbk,gb2312
+
 "set cindent
 "set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s "specify how to indent
 "set whichwrap=b,s,<,>,[,] "光标在行首或末可以到前后行
