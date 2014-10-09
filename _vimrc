@@ -5,7 +5,7 @@ set nocompatible
 syntax enable
 syntax on
 colorscheme evening
-set nu!
+set nu
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
