@@ -24,7 +24,7 @@ set ruler
 "----*about programming*----
 set showmatch
 set smartindent
-set autoindent!
+set autoindent
 
 "============================
 "ctags
