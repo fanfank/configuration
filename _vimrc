@@ -60,6 +60,13 @@ map <F9> :!./%<<CR>
 "============================
 "Personal Preferrencies
 "============================
+highlight OverLength ctermbg=white ctermfg=red guibg=#592929
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('OverLength', '\%>80v.\+', -1) 
+endif
+
 map zs <ESC>^i//<ESC>
 map zc <ESC>^xx
 
