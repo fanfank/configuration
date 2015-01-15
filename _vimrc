@@ -62,9 +62,9 @@ map <F9> :!./%<<CR>
 "============================
 highlight OverLength ctermbg=white ctermfg=red guibg=#592929
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=100
 else
-  match OverLength /\%>80v.\+/
+  match OverLength /\%>100v.\+/
 endif
 
 map zs <ESC>^i//<ESC>
