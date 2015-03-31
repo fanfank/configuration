@@ -4,7 +4,7 @@
 set nocompatible
 syntax enable
 syntax on
-colorscheme evening
+colorscheme koehler
 set nu
 set tabstop=4
 set softtabstop=4
@@ -60,12 +60,22 @@ map <F9> :!./%<<CR>
 "============================
 "Personal Preferrencies
 "============================
-highlight OverLength ctermbg=white ctermfg=red guibg=#592929
-if exists('+colorcolumn')
-  set colorcolumn=100
-else
-  match OverLength /\%>100v.\+/
-endif
+"highlight OverLength ctermbg=white ctermfg=red guibg=#592929
+"if exists('+colorcolumn')
+"  set colorcolumn=100
+"else
+"  match OverLength /\%>100v.\+/
+"endif
+
+highlight OverLength ctermbg=blue ctermfg=white guibg=#592929
+au WinEnter *.h   match OverLength /\%81v./
+au WinEnter *.c   match OverLength /\%81v./
+au WinEnter *.cpp match OverLength /\%81v./
+au WinEnter *.php match OverLength /\%81v./
+au BufWinEnter *.h   match OverLength /\%81v./
+au BufWinEnter *.c   match OverLength /\%81v./
+au BufWinEnter *.cpp match OverLength /\%81v./
+au BufWinEnter *.php match OverLength /\%81v./
 
 map zs <ESC>^i//<ESC>
 map zc <ESC>^xx
