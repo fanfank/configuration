@@ -10,7 +10,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set cursorline
 
 set encoding=utf-8 termencoding=utf-8 fileencoding=utf-8
 set fencs=utf-8,gbk,gb2312
@@ -25,37 +24,6 @@ set ruler
 set showmatch
 set smartindent
 set autoindent
-
-"============================
-"ctags
-"============================
-filetype plugin indent on
-set completeopt=longest,menu
-map <F6> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :Tlist Update<CR>:set tags=tags<CR>
-
-"============================
-"Taglist
-"============================
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-
-"============================
-"Minibuffer
-"============================
-let g:miniBufExplMapCTabSwitchBufs=1
-
-"============================
-"QuickFix
-"============================
-map <F3> :cp<CR>
-map <F4> :cn<CR>
-
-"============================
-"Compile and Run
-"============================
-map <F2> :cclose<CR>
-map <F5> :w<CR>:make %<<CR>:copen<CR><C-W>5_
-map <F9> :!./%<<CR>
 
 "============================
 "Personal Preferrencies
