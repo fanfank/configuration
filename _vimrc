@@ -10,6 +10,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=indent,eol,start
 
 set encoding=utf-8 termencoding=utf-8 fileencoding=utf-8
 set fencs=utf-8,gbk,gb2312
