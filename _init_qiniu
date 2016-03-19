@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# 安装composer
+curl -sS https://getcomposer.org/installer | php
+echo "---- Please enter your password ----"
+sudo mv composer.phar /usr/local/bin/composer
+
+# 配置composer
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+# composer安装七牛SDK
+composer require qiniu/php-sdk
