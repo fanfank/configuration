@@ -31,7 +31,7 @@ set autoindent
 "============================
 
 " Remove trailing spaces
-au BufWritePost * :%s/[ \t]\+$//ge
+au BufWritePre * :%s/[ \t]\+$//ge
 
 "highlight OverLength ctermbg=white ctermfg=red guibg=#592929
 "if exists('+colorcolumn')
