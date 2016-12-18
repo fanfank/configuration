@@ -23,7 +23,7 @@ set incsearch
 set ruler
 "----*about programming*----
 set showmatch
-set smartindent
+"set smartindent
 set autoindent
 
 "============================
@@ -31,7 +31,7 @@ set autoindent
 "============================
 
 " Remove trailing spaces
-:au BufWritePost * :%s/[ \t]\+$//ge
+au BufWritePost * :%s/[ \t]\+$//ge
 
 "highlight OverLength ctermbg=white ctermfg=red guibg=#592929
 "if exists('+colorcolumn')
