@@ -29,22 +29,31 @@ set autoindent
 "============================
 "Personal Preferrencies
 "============================
+
+" Remove trailing spaces
+:au BufWritePost * :%s/[ \t]\+$//ge
+
 "highlight OverLength ctermbg=white ctermfg=red guibg=#592929
 "if exists('+colorcolumn')
 "  set colorcolumn=100
 "else
 "  match OverLength /\%>100v.\+/
 "endif
-
 highlight OverLength ctermbg=blue ctermfg=white guibg=#592929
 au WinEnter *.h   match OverLength /\%81v./
 au WinEnter *.c   match OverLength /\%81v./
 au WinEnter *.cpp match OverLength /\%81v./
 au WinEnter *.php match OverLength /\%81v./
+au WinEnter *.go  match OverLength /\%81v./
 au BufWinEnter *.h   match OverLength /\%81v./
 au BufWinEnter *.c   match OverLength /\%81v./
 au BufWinEnter *.cpp match OverLength /\%81v./
 au BufWinEnter *.php match OverLength /\%81v./
+au BufWinEnter *.go  match OverLength /\%81v./
+
+highlight ExtraSpaceOrTab ctermbg=red ctermfg=white guibg=#592929
+au WinEnter * match ExtraSpaceOrTab /[ \t]\+$/
+au BufWinEnter * match ExtraSpaceOrTab /[ \t]\+$/
 
 map zs <ESC>^i//<ESC>
 map zc <ESC>^xx
