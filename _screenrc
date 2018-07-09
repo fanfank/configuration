@@ -2,3 +2,5 @@ escape ^bb
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%w"
+defencoding UTF-8                                                                                                                                             
+encoding UTF-8 UTF-8
