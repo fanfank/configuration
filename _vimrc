@@ -64,7 +64,6 @@ map <C-j> <C-w>j
 map <C-h> <C-w>h
 map <C-n> :tabe<CR>
 map <C-c> :tabc<CR>
-map <C-d> :tabo<CR>
 map { :tabN<CR>
 map } :tabn<CR>
 
