@@ -1,6 +1,7 @@
 "============================
 "Normal preferrence settings
 "============================
+
 set nocompatible
 syntax enable
 syntax on
