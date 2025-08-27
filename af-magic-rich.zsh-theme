@@ -38,7 +38,7 @@ PS2="%{$fg[red]%}\ %{$reset_color%}"
 # - 都没有则只显示 user
 export CONDA_CHANGEPS1=false # 去掉 dash 前的 env
 #RPS1='%(?..%{$fg[red]%}%? ↵%{$reset_color%}) %{$fg[245]%}%D{%H:%M:%S}%{$reset_color%} ${FG[237]}%n@$( [[ -n $VIRTUAL_ENV ]] && basename "$VIRTUAL_ENV" || echo ${CONDA_DEFAULT_ENV:-} )%{$reset_color%}'
-RPS1='%(?..%{$fg[red]%}%? ↵%{$reset_color%}) %{$fg[245]%}%D{%H:%M:%S}%{$reset_color%} ${FG[237]}%n@$( [[ -n $CONDA_DEFAULT_ENV ]] && echo $CONDA_DEFAULT_ENV )%{$reset_color%}'
+RPS1='%(?..%{$fg[red]%}%? ↵%{$reset_color%}) %{$fg[245]%}%D{%a,%b%d} %D{%H:%M:%S}%{$reset_color%} ${FG[237]}%n@$( [[ -n $CONDA_DEFAULT_ENV ]] && echo $CONDA_DEFAULT_ENV )%{$reset_color%}'
 
 
 # git settings
